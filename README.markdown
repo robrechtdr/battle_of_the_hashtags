@@ -26,6 +26,8 @@
 	sudo apt-get install redis-server
 	sudo apt-get install redis-tools
 
+	mkvirtualenv battle_of_the_hashtags
+
 	pip install -r requirements.txt
 
 	python manage.py migrate
