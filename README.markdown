@@ -5,11 +5,17 @@
 
 
   ![detail1](https://raw.githubusercontent.com/robrechtdr/battle_of_the_hashtags/master/.images/both1.png)
+
   ![detail2](https://raw.githubusercontent.com/robrechtdr/battle_of_the_hashtags/master/.images/both2.png)
+
   ![detail3](https://raw.githubusercontent.com/robrechtdr/battle_of_the_hashtags/master/.images/both3.png)
+
   ![detail4](https://raw.githubusercontent.com/robrechtdr/battle_of_the_hashtags/master/.images/both4.png)
+
   ![detail5](https://raw.githubusercontent.com/robrechtdr/battle_of_the_hashtags/master/.images/both5.png)
+
   ![detail6](https://raw.githubusercontent.com/robrechtdr/battle_of_the_hashtags/master/.images/both6.png)
+
   ![detail7](https://raw.githubusercontent.com/robrechtdr/battle_of_the_hashtags/master/.images/both7.png)
 
 
@@ -39,4 +45,4 @@
 ## To check in application
 
 1. Create HashtagBattle entity in `http://localhost:8000/admin`.
-2. See battles being triggered in the celery worker pane as they happen. You can also check the admin or `http://localhost:8000/get_battle/1/`. Not that when outside of start or end date a battle won't be triggered.
+2. See battles being triggered in the celery worker pane as they happen (every minute). You can also check the admin or `http://localhost:8000/get_battle/1/`. Not that when outside of start or end date a battle won't be triggered as requested.
