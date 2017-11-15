@@ -12,8 +12,6 @@ REDIS_URL = "redis://localhost:6379/0"
 
 # http://docs.celeryproject.org/en/latest/getting-started/brokers/redis.html#broker-redis
 app.conf.broker_url = REDIS_URL
-#app.conf.result_backend = REDIS_URL
-
 
 # Using a string here means the worker doesn't have to serialize
 # the configuration object to child processes.
