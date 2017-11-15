@@ -2,20 +2,17 @@
 from __future__ import unicode_literals
 
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
+from django.core import serializers
+
+from .models import HashtagBattle
 
 
 def home(request):
-    return HttpResponse("Hello!")
+    return HttpResponse("Welcome home!")
 
 
 def get_battle(request, pk):
-    from django.http import JsonResponse
-    from .models import HashtagBattle
-
-    from django.core import serializers
-
     battle = HashtagBattle.objects.get(pk=pk)
-
     data = serializers.serialize('json', [battle])
     return HttpResponse(data, content_type='application/json')
