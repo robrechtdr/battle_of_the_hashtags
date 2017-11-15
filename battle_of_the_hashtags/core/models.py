@@ -3,7 +3,8 @@ from __future__ import unicode_literals
 
 from django.db import models
 
-# This will have a lot of entries
+
+# This will have a lot of entries over time. We could add an index on tweet_id for faster reading.
 class ProcessedTweet(models.Model):
     tweet_id = models.IntegerField()
 
@@ -21,13 +22,3 @@ class HashtagBattle(models.Model):
 
     def __str__(self):
         return self.name
-
-
-'''
-hashtag_1 = models.ForeignKey(HashTag)
-hashtag_2 = models.ForeignKey(HashTag)
-
-class Hashtag(models.Model):
-    name = models.CharField(max_length=100) 
-    url = models.URLField(max_length=200)
-'''
