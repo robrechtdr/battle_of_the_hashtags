@@ -47,8 +47,8 @@ def batch_process_hashtag_battle(battle, batch_size=10):
     #us_sc = Spellchecker("en_US")
     gb_spchecker = SpellChecker("en_GB")
 
-    htag_1_curs = tweepy.Cursor(api.search, q=battle.hashtag_1)
-    htag_2_curs = tweepy.Cursor(api.search, q=battle.hashtag_2)
+    htag_1_curs = tweepy.Cursor(api.search, q="#{}".format(battle.hashtag_1))
+    htag_2_curs = tweepy.Cursor(api.search, q="#{}".format(battle.hashtag_2))
 
     htag_1_gen = htag_1_curs.items()
     htag_2_gen = htag_2_curs.items()
