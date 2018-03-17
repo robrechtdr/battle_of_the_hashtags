@@ -1,6 +1,35 @@
 # The battle of the hashtags
 
 
+## Task description
+
+We would like you to develop a simple application called “The battle of the hashtags”.
+The application should allow an administrator to create ‘battles’ between two hashtags,
+comparing the number of typos in tweets tagged with them.
+
+A programmatic and automated approach should be used to fetch tweets from the hashtags in
+question, on a periodic basis, from the Twitter API.
+After a predetermined amount of time, the winning hashtag will be the one with the smallest total
+number of typos.
+
+The technical requirements are as follows:
+* Python and Django should be used
+* Data should be stored on an SQL based datastore
+* Security aspects should be taken into consideration
+* Delivery needs to happen through a git repository with run instructions
+The functional requirements are as follows:
+* As an admin, I should be able to use a CRUD to configure battles (Create, Retrieve,
+Update, Delete)
+* As an admin, I should be able to specify how long a battle will run for, with start and end
+date times (please use a datepicker)
+* As an admin, I should be able to login/logout
+
+There is no frontend required for this exercise, however, an API endpoint should be exposed to
+return the current result for a specific battle id, in JSON format. It should return the battle name,
+start and end date times, the hashtags and their number of typos and which one is the winner at
+that moment.
+
+
 ## Screenshots
 
 
@@ -17,6 +46,7 @@
   ![detail6](https://raw.githubusercontent.com/robrechtdr/battle_of_the_hashtags/master/.images/both6.png)
 
   ![detail7](https://raw.githubusercontent.com/robrechtdr/battle_of_the_hashtags/master/.images/both7.png)
+
 
 
 ## Setup
